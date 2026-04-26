@@ -28,6 +28,11 @@ const PACKAGE_MANAGERS = {
 		exec: "bunx",
 		execNoInstall: "bun run",
 	},
+	vp: {
+		install: "vp i",
+		exec: "vpx",
+		execNoInstall: "vpr",
+	},
 } as const satisfies Readonly<Record<string, PackageManager>>;
 
 type PackageManagerValue = keyof typeof PACKAGE_MANAGERS;
